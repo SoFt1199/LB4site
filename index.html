@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Музичний тур «Наживо»: розклад, пісні, квитки та контакти.">
+  <title>Музичний тур «Наживо»</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <header class="site-header">
+      <h1>Музичний тур «Наживо»</h1>
+      <nav class="top-menu" aria-label="Головна навігація">
+        <a href="#index">Головна</a><a href="#tour">Про тур</a><a href="#schedule">Розклад</a><a href="#songs">Пісні</a>
+        <a href="#tickets">Квитки</a><a href="#discounts">Знижки</a><a href="#payment">Оплата</a><a href="#contacts">Контакти</a>
+      </nav>
+    </header>
+    <div class="columns">
+      <main>
+        <section class="content" id="index"><h2>Жива музика у твоєму місті</h2><p>Запрошуємо на вечори живої музики, улюблених пісень і нових вражень у містах України.</p><p>Перегляньте <a href="#tour">інформацію про тур</a> та <a href="#schedule">розклад концертів</a>.</p></section>
+        <section class="content" id="tour"><h2>Музика, що об’єднує</h2><p>Цього літа на слухачів чекають улюблені пісні, нові композиції та незабутня атмосфера концертів просто неба.</p><p>Тур охоплює чотири міста України. Оберіть <a href="#schedule">зручну дату й місце</a>.</p></section>
+        <section class="content" id="schedule"><table><caption>Дати та місця проведення концертів</caption><thead><tr><th>Дата</th><th>Місто</th><th>Місце проведення</th></tr></thead><tbody><tr><td>12 червня 2026</td><td>Львів</td><td>!FESTrepublic</td></tr><tr><td>19 червня 2026</td><td>Київ</td><td>Палац спорту</td></tr><tr><td>27 червня 2026</td><td>Одеса</td><td>Зелений театр</td></tr><tr><td>4 липня 2026</td><td>Дніпро</td><td>Літній театр</td></tr></tbody></table><p>Дізнайтеся більше <a href="#tour">про тур</a> або поверніться на <a href="#index">головну сторінку</a>.</p></section>
+        <section class="content" id="songs"><h2>Пісні концерту</h2><p><em>Приклад програми туру:</em></p><p>У програмі — відомі композиції гурту, улюблені пісні слухачів і нові музичні прем’єри.</p><ul><li>«Світло вночі»</li><li>«Дорога додому»</li><li>«Теплий вітер»</li><li>«Разом»</li><li>«Нове літо»</li></ul><p>Порядок виконання може змінюватися. Повний сетлист буде оголошено перед концертом.</p></section>
+        <section class="content" id="tickets"><h2>Передзамовлення квитків</h2><p>Залиште контактні дані, щоб організатори могли зв’язатися з вами й підтвердити наявність квитків.</p><form action="#contacts" method="get"><p><label>Ім’я<br><input name="name" required></label></p><p><label>Електронна пошта<br><input type="email" name="email" required></label></p><p><label>Кількість квитків<br><input type="number" name="quantity" min="1" max="20" value="1" required></label></p><p><label>Місто концерту<br><select name="city"><option>Львів</option><option>Київ</option><option>Одеса</option><option>Дніпро</option></select></label></p><button type="submit">Перейти до контактів для підтвердження</button></form><p>Форма підготовлює запит у браузері, але не надсилає його автоматично. Щоб завершити передзамовлення, зв’яжіться з організаторами.</p></section>
+        <section class="content" id="discounts"><h2>Акції та знижки</h2><p>Для групових замовлень діє знижка від вартості квитка:</p><ul><li>2–3 квитки — знижка 5%;</li><li>4–5 квитків — знижка 10%;</li><li>від 6 квитків — знижка 15%.</li></ul><p>Знижка застосовується до квитків одного замовлення. Щоб уточнити підсумкову вартість, вкажіть кількість квитків у <a href="#tickets">формі передзамовлення</a> та зверніться до організаторів.</p></section>
+        <section class="content" id="payment"><h2>Оплата квитків</h2><p>Після підтвердження наявності квитків організатори повідомлять актуальну вартість і спосіб оплати.</p><ul><li>Оплата банківською карткою за посиланням від організатора.</li><li>Переказ на рахунок організатора після підтвердження замовлення.</li></ul><p>Реквізити надаються особисто під час оформлення замовлення. Перевіряйте отримувача та суму перед оплатою.</p><p>Щоб замовити квитки, перейдіть до <a href="#tickets">передзамовлення</a>.</p></section>
+        <section class="content" id="contacts"><h2>Контактна інформація</h2><p>З питань квитків, оплати та проведення концертів звертайтеся до організаторів туру.</p><ul><li>Електронна пошта: <a href="mailto:concert@example.com">concert@example.com</a></li><li>Телефон: +380 (00) 000-00-00</li><li>Графік відповідей: понеділок–п’ятниця, 10:00–18:00</li></ul><p>Контакти наведені як приклад для навчального макета. Перед публікацією замініть їх на справжні дані організаторів.</p></section>
+      </main>
+    </div>
+    <footer class="site-footer">До зустрічі на концерті!</footer>
+  </div>
+  <script>
+    (() => {
+      const sections = document.querySelectorAll('.content');
+      function show() {
+        const id = location.hash.slice(1) || 'index';
+        const current = document.getElementById(id) || document.getElementById('index');
+        sections.forEach(section => section.classList.toggle('active', section === current));
+        document.querySelectorAll('.top-menu a').forEach(link => link.setAttribute('aria-current', link.hash === '#' + current.id ? 'page' : 'false'));
+      }
+      window.addEventListener('hashchange', show);
+      show();
+    })();
+  </script>
+</body>
+</html>
